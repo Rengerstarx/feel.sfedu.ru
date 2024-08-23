@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Шестое чувство</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="inner-header">
+        <a href="https://sfedu.ru/"><img src="./img/logosfeduruswhite.svg" alt="SFedU Logo" height="70px" width="70px"
+            class="header-logo" /></a>
+        <nav>
+          <a href="#about-exp">О проекте</a>
+          <a href="#partners">Партнеры</a>
+        </nav>
+        <a class="results-btn" href="https://www.rustore.ru/catalog/app/com.sfedu.sixthsense2">Скачать
+          приложение</a>
+      </div>
+    </header>
+
+    <script>
+      let header = document.getElementsByClassName("header")[0];
+      let headerBG = window
+        .getComputedStyle(header)
+        .getPropertyValue("background-color");
+      function setHeaderOpacity() {
+        if (!header.classList.contains("darken")) {
+          header.classList.add("darken");
+        }
+      }
+      function unsetHeaderOpacity() {
+        if (header.classList.contains("darken")) {
+          header.classList.remove("darken");
+        }
+      }
+
+      document.addEventListener("scroll", function (e) {
+        if (window.pageYOffset == 0) {
+          unsetHeaderOpacity();
+        } else {
+          setHeaderOpacity();
+        }
+      }, { passive: true });
+    </script>
+
+    <main>
+      <section class="intro">
+
+        <div class="main-text">
+          <img src="./img/Логотип_без заголовка.png" alt="#" />
+          <h1><span class="sfedu">Шестое чувство</span></h1>
+          <p>проект реализуется компанией ООО «БАНАНАС СОЛЮШИН»
+          <p>при поддержке Фонда содействия инновациям</p>
+          <p>на базе ИКТИБ ЮФУ</p>
+          </p>
+        </div>
+      </section>
+
+      <section class="about-exp" id="about-exp">
+        <div class="text-container">
+          <div class="text">
+            <h2>Что такое Шестое Чувство?</h2>
+            <p>
+              Шестое чувство это система для навигации внутри помещений для слепых или слабовидящих людей.
+            </p>
+            <p>
+              Нужно просто скачать мобильное приложение и система готова к использованию
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="container">
+        <div class="text-container">
+          <div class="center">
+            <a href="https://www.rustore.ru/catalog/app/com.sfedu.sixthsense2" class="results-btn2">Скачать
+              приложение</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="partners" id="partners">
+        <div class="info-container">
+          <div class="text">
+            <div class="logos">
+              <div class="row">
+                <a href="https://sfedu.ru/" class="item"><img src="./img/logosfedurus.png" alt="SFedU logo"
+                    class="logo"></a>
+                <a href="https://ictis.sfedu.ru/" class="item"><img src="./ICTIS.jpeg" alt="Ictis logo" class="logo"></a>
+                <a href="https://proictis.sfedu.ru/" class="item"><img src="./img/logo_proictis_dark.png" alt="skb logo"
+                    class="logo"></a>
+                    <a href="https://fasie.ru/" class="item"><img src="./img/rsci.jpeg" alt="#" class="logo" /></a>
+                <a href="https://xn--d1achjhdicc8bh4h.xn--p1ai/" class="item"><img src="./img/logohor.png" width="300" alt="#"
+                    class="logo" /></a>
+                <a href="https://sfedu.ru/" class="item"><img src="./img/PLJONKIN.png" alt="#" class="logo" /></a>
+                <a href="https://exponent.sfedu.ru/"><img src="Logo_exp(sfedu).png" alt="#" class="logo" /></a>
+                <a href=""><img src="bananas.png" alt="#" class="logo" /></a>
+              </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>ООО "БАНАНАС СОЛЮШИН" | 2024 | bekezin@sfedu.ru | +79001293382</p>
+    </footer>
+  </div>
+</body>
+
+</html>
