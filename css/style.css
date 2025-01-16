@@ -46,6 +46,12 @@ h3 {
   font-size: 34px;
 }
 
+.main-text p a {
+  color: white !important; /* Принудительно установить белый цвет */
+  text-align: center;
+  display: inline-block; /* Гарантирует применение выравнивания по центру */
+}
+
 .whatsapp {
   height: 1em;
   vertical-align: middle;
@@ -356,4 +362,8 @@ a .logo:hover {
 .team {
   display: flex;
   flex-direction: column;
+}
+
+.white-text {
+  color: white;
 }
